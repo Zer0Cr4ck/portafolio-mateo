@@ -1,0 +1,128 @@
+.two{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+.two_img img{
+  
+    width: 100%;
+    /* height: 300px; */
+    vertical-align: middle;
+}
+.two_text-wrapper{
+    /* border: 1px solid red; */
+    background: linear-gradient(135deg, #F0FF00 0%, #58CFFB 100%);
+
+}
+.two_text{
+ 
+    margin-inline-start: 1.5rem;
+    margin-inline-end: 1.5rem;
+    
+}
+
+.two_text h2{
+    font: var(--headline5);
+    letter-spacing: 0.4px;
+    color: var(--black);
+}
+
+.two_text p{
+    color: var(--black);
+    font: var(--body-regular);
+}
+
+.two_buttons{
+    /* background: var(--black); */
+    padding-block-start: 1.5rem;
+    margin-block-end:3rem;
+    
+}
+
+
+.two_buttons a{
+    margin-inline-start: 1.5rem;
+    margin-inline-end:1.5rem;
+    display: block;
+    block-size: 100%;
+    text-align: center;
+    padding-block-start: .75rem;
+    padding-block-end: .75rem;
+    text-decoration: none;
+    border-radius:4px ;
+    background: var(--black);
+    margin-block-end: 1rem;
+    color: var(--white);
+    font: var(--button);
+    transition: .3s ease;
+}
+.two_buttons a:active{
+    transform: scale(.95);
+}
+.two_buttons a:hover{
+    background-color:transparent;
+    outline:2px solid var(--black);
+    color: var(--black);
+}
+
+.two_buttons a:nth-child(2){
+    background-color:transparent;
+    border:2px solid var(--black);
+    color: var(--black);
+}
+
+.two_buttons a:hover:nth-child(2){
+    color: var(--white);
+    background: var(--black);
+}
+
+
+@media only screen and (min-width: 1024px){
+
+    .two{
+        display: flex;
+        flex-direction: row;
+       
+       
+    }
+
+        .two_img{
+            inline-size: 55%;
+            order: 1;
+           
+        }
+        .two_text-wrapper{
+            inline-size: 45%;
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            
+        
+        }
+        .two_buttons{
+            display: flex;
+            
+        }
+
+        .two_buttons a{
+            inline-size: 12.5rem;
+            block-size: auto;
+            padding-inline-start: 1.5rem;
+            padding-inline-end:1.5rem
+
+        }
+
+}
+
+@media (min-width: 1200px){
+
+    .two_text-wrapper{
+        padding-inline-start: 15%;
+    }
+
+
+}

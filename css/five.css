@@ -1,0 +1,79 @@
+.five_wrapper{
+    margin-block-start: 2.5rem;
+    margin-inline-start: 1.5rem;
+    margin-inline-end: 1.5rem;
+    
+}
+
+.five{
+    margin-block-end: 4.5rem;
+}
+
+
+.five_title h2{
+    font: var(--headline5);
+    letter-spacing: 0.4px;
+   
+}
+
+.five_title p,.five_softSkilss h2{
+    font: var(--headline5);
+    letter-spacing: 0.4px;
+    padding-block-end:.625rem;
+    border-bottom: 2px solid var(--white);
+    margin-block-end: 2.5rem;
+}
+
+
+
+
+
+
+.five_trabajo h3{
+    font: var(--headline5);
+    letter-spacing: 0.4px;
+}
+
+.five_trabajo p{
+    color: var(--grey);
+    font: var(--headline6);
+}
+
+
+
+.five_trabajo p:last-child{
+    color: var(--white);
+    font: var(--body-regular);
+}
+
+.five_softSkills-wrapper h3{
+    font: var(--headline6);
+}
+
+
+.five_softSkills-wrapper p{
+
+    font: var(--body-regular);
+}
+
+
+@media only screen and (min-width: 1024px){
+
+    .five_wrapper{
+        
+       inline-size: 65%;
+        margin: auto;
+    }
+
+    .five_skills{
+        display: flex;
+        flex-direction: row;
+        gap: 2.5rem;
+    }
+
+    .five_softSkilss{
+       inline-size: 50%;
+    }
+
+
+}

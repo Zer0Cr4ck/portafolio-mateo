@@ -1,0 +1,34 @@
+.contact{
+    background-color: var(--black);
+}
+
+.contact_wrapper{
+    margin-inline-start: 1.5rem;
+    margin-inline-end: 1.5rem;
+}
+
+.contact_wrapper h3{
+    margin-block-start: 0;
+    margin-block-end: .4rem;
+    font: var(--headline4)
+}
+
+
+.contact_wrapper a{
+    color: var(--tertiary);
+    text-decoration: none;
+    font: var(--body2-bold);
+    margin-block-start: 1rem;
+    
+    margin-block-start: 1rem;
+    margin-block-end: 3.5rem;
+}
+
+@media only screen and (min-width: 1024px){
+
+    .contact_wrapper{
+        inline-size: 65%;
+        margin: auto;
+    }
+
+}

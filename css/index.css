@@ -1,0 +1,52 @@
+@import url(./header.css);
+@import url(./hero.css);
+@import url(./one.css);
+@import url(./two.css);
+@import url(./three.css);
+@import url(./four.css);
+@import url(./five.css);
+@import url(./contact.css);
+@import url(./footer.css);
+:root { 
+  --primary: #34A7FF; 
+  --white: #ffffff; 
+  --grey: #9BA4AD;
+  --secondary: #fed9da; 
+  --black: #141414; 
+  --background: #0f0e17; 
+  --headline: #fffffe; 
+  --paragraph: #a7a9be; 
+  --secondary: #f25f4c; 
+  --tertiary: #EF4565;
+  --button-background: #ff8906; 
+  --button-text: #fffffe; 
+  --headline1: 700 4rem/5rem Maven Pro; 
+  --headline2: 700 3rem/3.5rem Maven Pro; 
+  --headline3: 700 2.5rem/3rem Maven Pro; 
+  --headline4: 700 1.8rem/1.75rem Maven Pro; 
+  --headline5: 700 1.5rem/1.75rem Maven Pro; 
+  --headline6: 700 1.15rem/1.75rem Maven Pro; 
+  --button: 700 1.2rem/1.75rem Maven Pro; 
+  --caption: 400 0.75rem/1.375rem Cantarell; 
+  --body1-regular: 400 1.5rem/2.5rem Maven Pro; 
+  --body1-bold: 700 1.5rem/2.5rem Maven Pro; 
+  --body2s-bold: 500 1.375rem/2.5rem Maven Pro; 
+  --body2-regular: 400 1.25rem/2rem Maven Pro; 
+  --body2-bold: 700 1rem/2rem Maven Pro; 
+  --body-regular: 400 1.3rem/1.75rem Maven Pro;
+}
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+body {
+  color: var(--white);
+  background-color: var(--black);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+

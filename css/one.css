@@ -1,0 +1,151 @@
+.one{
+    background-color: #04001e;
+}
+.one_img{
+
+    position:relative;
+    display:inline-block;
+   
+  
+   
+}
+
+.one_img::after{
+
+    content:'';
+  position:absolute;
+  left:0; top:0;
+  width:100%; 
+  height:100%;
+  display:inline-block;
+  background: rgb(4,0,30);
+  background: linear-gradient(-180deg, rgba(4,0,30,0) 0%, rgba(4,0,30,1) 78%);
+  
+
+
+}
+
+.one_img img{
+    display:inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.one_text{
+    position: relative;
+    inset-block-start: -80px;
+    margin-inline-start: 1.5rem;
+    margin-inline-end: 1.5rem;
+    
+}
+
+.one_text h2{
+    font: var(--headline5);
+    letter-spacing: 0.4px;
+}
+
+.one_text p{
+    color: var(--grey);
+    font: var(--body-regular);
+}
+
+.one_buttons{
+    background: var(--black);
+    padding-block-start: 1.5rem;
+    
+}
+
+
+.one_buttons a{
+    margin-inline-start: 1.5rem;
+    margin-inline-end:1.5rem;
+    display: block;
+    block-size: 100%;
+    text-align: center;
+    padding-block-start: .75rem;
+    padding-block-end: .75rem;
+    text-decoration: none;
+    border-radius:4px ;
+    background: var(--white);
+    margin-block-end: 1rem;
+    color: var(--black);
+    font: var(--button);
+    transition: .3s ease;
+}
+.one_buttons a:active{
+    transform: scale(.95);
+}
+.one_buttons a:hover{
+    background-color:var(--black);
+    outline:2px solid var(--headline);
+    color: var(--white);
+}
+
+.one_buttons a:nth-child(2){
+    background-color:var(--black);
+    border:2px solid var(--headline);
+    color: var(--white);
+}
+
+.one_buttons a:hover:nth-child(2){
+    color: var(--black);
+    background: var(--white);
+}
+
+
+@media only screen and (min-width: 1024px){
+
+    .one{
+        display: flex;
+        flex-direction: row;
+       
+       
+    }
+
+    .one_right{
+        inline-size: 45%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-inline-start: 2rem;
+        padding-inline-end: 15%;
+    }
+    .one_text{
+        position: relative;
+        inset-block-start: 0;
+
+       
+       
+    }
+
+     .one_img{
+            inline-size: 55%;
+            order: 0;
+           
+        }
+    .one_text-wrapper{
+            
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            
+            
+        
+        }
+        .one_buttons{
+            display: flex;
+            background: none;
+            padding: 0;
+            
+        }
+
+        .one_buttons a{
+            inline-size: 12.5rem;
+            block-size: auto;
+            padding-inline-start: 1.5rem;
+            padding-inline-end:1.5rem
+
+        }
+
+}
